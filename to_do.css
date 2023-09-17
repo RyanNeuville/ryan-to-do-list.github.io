@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: inherit;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: #5c5a5a;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 300px;
+    height: 550px;
+    background-color: #5a5959;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 6px 5px rgb(85, 42, 42);
+}
+header{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    padding: 10px;
+    
+}
+input{
+    background-color: whitesmoke;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+}
+input[type="submit"]{
+    width: 30%;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: inherit;
+    border: 3px solid whitesmoke;
+}
+ul{
+    list-style: none;
+    width: 100%;
+}
+li{
+    padding: 10px 10px 10px 40px;
+    position: relative;
+}
+li:nth-child(2n+1){
+    background-color: #ebebeb;
+}
+li > span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px 10px ;
+}
+li:hover{
+    cursor: pointer;
+    background-color: khaki;
+}
+li.checked{
+    text-decoration: line-through;
+    color: #ebebeb;
+    background-color: #3a2c2c;
+}
+li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: wheat;
+    border-style: solid;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+h1 img{
+    width: 50px;
+    border-radius: 50%;
+}
+.add{
+    color: #5c5a5a;
+}
+.delete{
+    width: 14px;
+    border-radius: 10px;
+}
+span{
+    color: white;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 5px;
+}
